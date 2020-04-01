@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: restful-api
+  datasource:
+    url: jdbc:mysql://localhost:3308/spring?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    driver-class-name: com.mysql.jdbc.Driver
+#    type: com.mysql.cj.jdbc.MysqlConnectionPoolDataSource
+    username: root
+    password: 1
+#    platform: mysql
+  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+server:
+  port: 9999
+#  servlet:
+#    context-path: /api
